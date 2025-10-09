@@ -27,6 +27,7 @@ const Header = () => {
         id="header"
         className="sectiona fixed z-40 w-full bg-[#097969] rounded p top-0 flex items-center text-[#001712] px-[7vw] py-2 justify-between"
       >
+        <button className="sm:hidden">☰</button>
         <Link to={"/"}>
           {" "}
           <img src={logo} className="w-[5vw]" alt="" />
