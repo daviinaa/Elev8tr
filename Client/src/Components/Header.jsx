@@ -23,72 +23,27 @@ const Header = () => {
   };
   return (
     <div>
-      <div
-        id="header"
-        className="sectiona fixed z-40 w-full bg-[#097969] rounded p top-0 flex items-center text-[#001712] px-[7vw] py-2 justify-between"
-      >
-        <button className="sm:hidden">☰</button>
-        <Link to={"/"}>
-          {" "}
-          <img src={logo} className="w-[5vw]" alt="" />
-        </Link>
-        <div className="flex items-center gap-6">
-          <div className="flex gap-6">
-            <Link to={"/"} href="" className="hover:underline">
-              Home
-            </Link>
-            <Link to={"About"} href="" className="hover:underline">
-              About Us
-            </Link>
-            <Link to={"/Listings"} href="" className="hover:underline">
-              Listings
-            </Link>
-            {/* <Link to={""} href="">
-              {" "}
-              <img src={search} alt="" />
-            </Link> */}
-          </div>
-          {/* <div className=" bg-[#CCE3DE] w-[1px] h-10"></div> */}
-          {decoded ? (
-            <div to={"/profile"} className="flex relative items-center gap-6">
-              <div
-                onClick={toggleDropdown}
-                className="flex justify-center items-center gap-4 text-base font-medium"
-              >
-                <img src={profile} alt="" />
-                <h1>{decoded.id.firstname}</h1>
-              </div>
-              {dropDown && (
-                <div>
-                  <div className="absolute top-[130%] bg-[#017358] rounded border cursor-pointer hover:underline">
-                    <p
-                      className=""
-                      onClick={() => {
-                        toggleDropdown();
-                        Navigate("/profile");
-                      }}
-                    >
-                      Profile
-                    </p>
-                    <p onClick={logout} className="hover:underline">
-                      Logout
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className="flex items-center gap-6">
-              <Link to={"/register"} href="" className="hover:underline">
-                Register
-              </Link>
-              <Link to={"/Login"} href="" className="hover:underline">
-                Login
-              </Link>
-            </div>
-          )}
-        </div>
-      </div>
+      <header className="w-full px-6 py-4 flex items-center justify-between bg-black/30 backdrop-blur-md fixed top-0 left-0 z-50">
+        <h1 className="text-2xl font-bold tracking-wide">Elev8tr</h1>
+
+        <nav className="hidden md:flex gap-6">
+          <Link to="/signup" className="hover:text-[#5F9EA0] transition">
+            Signup
+          </Link>
+          <Link to="/login" className="hover:text-[#5F9EA0] transition">
+            Login
+          </Link>
+        </nav>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden flex flex-col gap-[6px] focus:outline-none"
+        >
+          <span className="block w-6 h-0.5 bg-white"></span>
+          <span className="block w-6 h-0.5 bg-white"></span>
+          <span className="block w-6 h-0.5 bg-white"></span>
+        </button>
+      </header>
     </div>
   );
 };
