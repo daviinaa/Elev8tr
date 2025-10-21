@@ -66,7 +66,6 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-6 py-12">
       <div className="max-w-5xl mx-auto backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
-        {/* ===== Profile Header ===== */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8">
           <div className="relative">
             <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#5F9EA0]">
@@ -108,7 +107,6 @@ export default function Dashboard() {
         </div>
 
         <form onSubmit={handleSave} className="flex flex-col gap-6">
-          {/* ===== Personal Info ===== */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Personal Information
@@ -149,7 +147,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* ===== Academic Info ===== */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Academic Information
@@ -188,14 +185,11 @@ export default function Dashboard() {
               />
             </div>
           </div>
-
-          {/* ===== Skills & Interests ===== */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Skills & Interests
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Skills Section */}
               <div>
                 <label className="block mb-2 text-gray-300">
                   Technical Skills
@@ -235,7 +229,6 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              {/* Interests Section */}
               <div>
                 <label className="block mb-2 text-gray-300">
                   Areas of Interest
@@ -282,7 +275,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* ===== Professional Bio ===== */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Professional Bio
@@ -297,7 +289,6 @@ export default function Dashboard() {
             ></textarea>
           </div>
 
-          {/* ===== Save Button ===== */}
           <div className="text-center">
             <button
               type="submit"
