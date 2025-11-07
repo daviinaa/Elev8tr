@@ -57,7 +57,7 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white p-8">
-      <Header />
+      {/* <Header /> */}
       <h1 className="text-3xl font-bold mb-8 mt-10 text-[#5F9EA0]">
         Administrator Dashboard
       </h1>
