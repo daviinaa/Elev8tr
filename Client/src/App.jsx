@@ -7,6 +7,7 @@ import InternshipList from "./Pages/InternshipList";
 import InternshipDetails from "./Pages/InternshipDetails";
 import InternshipApply from "./Pages/InternshipApplication";
 import InternshipScheduling from "./Pages/InternshipScheduling";
+import AdminDashboard from "./Pages/AdminDashboard";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/internships" element={<InternshipList />} />
         <Route path="/internships/:id" element={<InternshipDetails />} />
         <Route path="/apply/:id" element={<InternshipApply />} />
+        <Route path="/AdminDashboard" element={<AdminDashboard />} />
         <Route
           path="/internshipscheduling"
           element={<InternshipScheduling />}
