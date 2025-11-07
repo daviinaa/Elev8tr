@@ -6,6 +6,7 @@ import Dashboard from "./Pages/Dashboard";
 import InternshipList from "./Pages/InternshipList";
 import InternshipDetails from "./Pages/InternshipDetails";
 import InternshipApply from "./Pages/InternshipApplication";
+import InternshipScheduling from "./Pages/InternshipScheduling";
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/internships" element={<InternshipList />} />
         <Route path="/internships/:id" element={<InternshipDetails />} />
-        <Route path="/apply/:id" element={<InternshipApply />} />{" "}
+        <Route path="/apply/:id" element={<InternshipApply />} />
+        <Route
+          path="/internshipscheduling"
+          element={<InternshipScheduling />}
+        />
       </Routes>
     </BrowserRouter>
   );
