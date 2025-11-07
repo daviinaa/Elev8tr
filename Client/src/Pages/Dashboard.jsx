@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaEdit, FaCamera } from "react-icons/fa";
 
 export default function Dashboard() {
@@ -21,9 +22,7 @@ export default function Dashboard() {
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
-    if (file) {
-      setProfileImage(URL.createObjectURL(file));
-    }
+    if (file) setProfileImage(URL.createObjectURL(file));
   };
 
   const handleChange = (e) => {
@@ -65,6 +64,33 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-6 py-12">
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="text-3xl font-bold text-[#5F9EA0]">Your Dashboard</h1>
+
+        <div className="flex gap-4">
+          <Link
+            to="/internshiplist"
+            className="bg-[#5F9EA0] hover:bg-[#4f8587] text-white px-4 py-2 rounded-lg font-semibold transition"
+          >
+            View Internships
+          </Link>
+
+          <Link
+            to="/login"
+            className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-semibold transition"
+          >
+            Logout
+          </Link>
+        </div>
+      </div>
+
+      <p className="text-gray-300 mb-8">
+        Welcome to your personalized dashboard. Here you can manage your
+        profile, update your skills, and explore available internship
+        opportunities.
+      </p>
+
+      {/* Profile Section */}
       <div className="max-w-5xl mx-auto backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8">
           <div className="relative">
@@ -100,13 +126,18 @@ export default function Dashboard() {
             <h2 className="text-2xl font-bold">
               {formData.fullName || "Your Name"}
             </h2>
-            <button className="flex items-center gap-2 text-sm text-[#5F9EA0] hover:text-[#4f8587] transition">
+            <button
+              type="button"
+              className="flex items-center gap-2 text-sm text-[#5F9EA0] hover:text-[#4f8587] transition"
+            >
               <FaEdit /> Edit
             </button>
           </div>
         </div>
 
+        {/* Form Section */}
         <form onSubmit={handleSave} className="flex flex-col gap-6">
+          {/* Personal Info */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Personal Information
@@ -147,6 +178,7 @@ export default function Dashboard() {
             </div>
           </div>
 
+          {/* Academic Info */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Academic Information
@@ -185,11 +217,14 @@ export default function Dashboard() {
               />
             </div>
           </div>
+
+          {/* Skills & Interests */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Skills & Interests
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
+              {/* Skills */}
               <div>
                 <label className="block mb-2 text-gray-300">
                   Technical Skills
@@ -229,6 +264,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
+              {/* Interests */}
               <div>
                 <label className="block mb-2 text-gray-300">
                   Areas of Interest
@@ -275,6 +311,7 @@ export default function Dashboard() {
             </div>
           </div>
 
+          {/* Bio */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Professional Bio
