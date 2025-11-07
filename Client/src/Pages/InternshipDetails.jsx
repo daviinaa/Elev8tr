@@ -32,7 +32,6 @@ export default function InternshipDetails() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-6 py-10">
-      {/* <Header /> */}
       <div className="max-w-5xl mx-auto bg-gray-800/60 p-8 rounded-2xl shadow-lg border border-gray-700">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
@@ -50,7 +49,6 @@ export default function InternshipDetails() {
           </button>
         </div>
 
-        {/* Details Section */}
         <div className="mt-6 flex flex-wrap gap-6 text-gray-400">
           <div className="flex items-center gap-2">
             <MapPin size={18} className="text-[#5F9EA0]" />{" "}
@@ -68,7 +66,6 @@ export default function InternshipDetails() {
 
         <hr className="my-6 border-gray-700" />
 
-        {/* Description */}
         <div>
           <h2 className="text-xl font-semibold mb-2 text-[#5F9EA0]">
             Description
@@ -77,7 +74,6 @@ export default function InternshipDetails() {
             {internship.description}
           </p>
 
-          {/* Requirements */}
           <h2 className="text-xl font-semibold mb-2 text-[#5F9EA0]">
             Requirements
           </h2>
@@ -87,7 +83,6 @@ export default function InternshipDetails() {
             ))}
           </ul>
 
-          {/* Responsibilities */}
           <h2 className="text-xl font-semibold mb-2 text-[#5F9EA0]">
             Responsibilities
           </h2>
