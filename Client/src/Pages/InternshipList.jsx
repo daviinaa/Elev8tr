@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Briefcase, MapPin, CalendarDays, Clock } from "lucide-react";
+import Header from "../Components/Header";
 
 export default function InternshipList() {
   const [filter, setFilter] = useState("All");
@@ -70,12 +71,12 @@ export default function InternshipList() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-4 py-10">
-      <div className="max-w-7xl mx-auto">
+      <Header />
+      <div className="max-w-7xl- mt-8 mx-auto">
         <h1 className="text-3xl font-bold text-center mb-8 text-[#5F9EA0]">
           Internship Opportunities
         </h1>
 
-        {/* Filters */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
           <div className="flex flex-wrap gap-4">
             <select
@@ -113,7 +114,6 @@ export default function InternshipList() {
           </select>
         </div>
 
-        {/* Internship Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredInternships.map((internship) => (
             <div
