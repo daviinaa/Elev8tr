@@ -90,7 +90,6 @@ export default function Dashboard() {
         opportunities.
       </p>
 
-      {/* Profile Section */}
       <div className="max-w-5xl mx-auto backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8">
           <div className="relative">
@@ -135,9 +134,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Form Section */}
         <form onSubmit={handleSave} className="flex flex-col gap-6">
-          {/* Personal Info */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Personal Information
@@ -178,7 +175,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Academic Info */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Academic Information
@@ -218,13 +214,11 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Skills & Interests */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Skills & Interests
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Skills */}
               <div>
                 <label className="block mb-2 text-gray-300">
                   Technical Skills
@@ -264,7 +258,6 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              {/* Interests */}
               <div>
                 <label className="block mb-2 text-gray-300">
                   Areas of Interest
@@ -311,7 +304,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Bio */}
           <div>
             <h3 className="text-xl font-semibold text-[#5F9EA0] mb-3">
               Professional Bio
