@@ -1,16 +1,19 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Elev8tr
 
-Currently, two official plugins are available:
+It's a web-based platform designed to help students and early-career professionals explore internship opportunities, build strong applications, and manage their career journey in one place.This web app provides an intuitive and engaging user experience through a clean interface, responsive layouts, and smooth animations that enhance usability across all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Core Dependencies are: Node.js, npm or yarn package manager
 
-## React Compiler
+React & Routing: react, react-dom and react-router-dom
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Styling & UI: tailwindcss V3,framer-motion (for animations), lucide-react (for icons)
 
-## Expanding the ESLint configuration
+Charts & Data Visualization: recharts and GraphQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Development Tools: Vite
+
+All dependencies can be installed and ran by npm i (input dependency)
+
+You can run application locally by npm run dev.
