@@ -21,7 +21,6 @@ export default function Home() {
     <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white">
       <Header />
 
-      {/* ===== MOBILE MENU ===== */}
       {menuOpen && (
         <motion.nav
           initial={{ opacity: 0 }}
@@ -45,7 +44,6 @@ export default function Home() {
         </motion.nav>
       )}
 
-      {/* ===== HERO SECTION ===== */}
       <section className="flex flex-col items-center justify-center text-center px-6 md:px-20 lg:px-32 pt-32 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -97,7 +95,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* ===== SEARCH SECTION ===== */}
       <section className="px-6 md:px-20 lg:px-32 py-16 text-center">
         <motion.h2
           initial={{ opacity: 0 }}
@@ -127,7 +124,6 @@ export default function Home() {
           </button>
         </motion.div>
 
-        {/* ===== FEATURED INTERNSHIPS ===== */}
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -154,7 +150,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HOW IT WORKS SECTION ===== */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
