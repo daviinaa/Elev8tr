@@ -327,7 +327,7 @@ export default function InternshipApplication() {
               </motion.div>
             )}
 
-            <div className="flex gap-3 pt-2">
+            <div className="flex gap-3 pt-2 flex-wrap">
               <button
                 type="button"
                 onClick={() => navigate(`/internships/${id}`)}
@@ -335,12 +335,21 @@ export default function InternshipApplication() {
               >
                 Back to Details
               </button>
+
               <button
                 type="button"
                 onClick={() => navigate("/internships")}
                 className="px-4 py-2 rounded-lg border border-gray-700 hover:bg-white/10 transition"
               >
                 Browse More
+              </button>
+
+              <button
+                type="button"
+                onClick={() => navigate("/internshipscheduling")}
+                className="px-4 py-2 rounded-lg border border-gray-700 hover:bg-white/10 transition text-[#5F9EA0] font-semibold"
+              >
+                Schedule Interview
               </button>
             </div>
           </form>
