@@ -59,7 +59,7 @@ export default function AdminDashboard() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white p-8">
       {/* <Header /> */}
       <h1 className="text-3xl font-bold mb-8 mt-10 text-[#5F9EA0]">
-        Administrator Dashboard
+        Elev8tr Dashboard
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
