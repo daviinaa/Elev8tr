@@ -1,0 +1,12 @@
+{
+  "name": "elev8tr",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd Client && npm run dev",
+    "build": "cd Client && npm run build",
+    "preview": "cd Client && npm run preview",
+    "lint": "cd Client && npm run lint"
+  }
+}
+
